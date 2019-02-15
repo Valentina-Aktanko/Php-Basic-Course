@@ -3,9 +3,12 @@
  $b = -200;
 
  if ($a >= 0 && $b >= 0) {
-     echo "Разность чисел a и b: $a - $b";
+     $result = $a - $b;
+     echo "Разность чисел a и b: $result";
  } else if ($a < 0 && $b < 0) {
-     echo "Произведение чисел a и b: $a * $b";
+     $result = $a * $b;
+     echo "Произведение чисел a и b: $result";
  } else {
-     echo "Сумма чисел a и b: $a + $b";
+     $result = $a + $b;
+     echo "Сумма чисел a и b: ";
  }
