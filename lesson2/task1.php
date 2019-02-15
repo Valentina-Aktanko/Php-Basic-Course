@@ -1,7 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Валя
- * Date: 15.02.2019
- * Time: 10:00
- */
+ $a = 100;
+ $b = -200;
+
+ if ($a >= 0 && $b >= 0) {
+     echo "Разность чисел a и b: $a - $b";
+ } else if ($a < 0 && $b < 0) {
+     echo "Произведение чисел a и b: $a * $b";
+ } else {
+     echo "Сумма чисел a и b: $a + $b";
+ }
