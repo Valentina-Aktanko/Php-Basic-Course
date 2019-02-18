@@ -3,17 +3,14 @@
 function add($arg1, $arg2) {
     return $arg1 + $arg2;
 }
-
 function subtraction($arg1, $arg2) {
     return $arg1 - $arg2;
 }
-
 function multiply ($arg1, $arg2) {
     return $arg1 * $arg2;
 }
-
 function division($arg1, $arg2) {
-    return $arg1 / $arg2;
+    return (($arg2 !== 0) ? ($arg1 / $arg2) : ("Ошибка! Деление на 0")); // Скобки для наглядности
 }
 
 $arg1 = 10;
