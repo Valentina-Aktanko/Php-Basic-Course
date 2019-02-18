@@ -1,6 +1,6 @@
 <?php
 
-function add($arg1, $arg2)
+function addition($arg1, $arg2)
 {
     return $arg1 + $arg2;
 }
@@ -10,7 +10,7 @@ function subtraction($arg1, $arg2)
     return $arg1 - $arg2;
 }
 
-function multiply($arg1, $arg2)
+function multiplication($arg1, $arg2)
 {
     return $arg1 * $arg2;
 }
@@ -23,17 +23,17 @@ function division($arg1, $arg2)
 function mathOperation($arg1, $arg2, $operation)
 {
     switch ($operation) {
-        case "add":
+        case "addition":
             echo("Сумма чисел $arg1 и $arg2: ");
-            echo(add($arg1, $arg2));
+            echo(addition($arg1, $arg2));
             break;
         case "subtraction":
             echo("Разность чисел $arg1 и $arg2: ");
             echo(subtraction($arg1, $arg2));
             break;
-        case "multiply":
+        case "multiplication":
             echo("Произведение чисел $arg1 и $arg2: ");
-            echo(multiply($arg1, $arg2));
+            echo(multiplication($arg1, $arg2));
             break;
         case "division":
             echo("Результат деления числа $arg1 на число $arg2: ");
