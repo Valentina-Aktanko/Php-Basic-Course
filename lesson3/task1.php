@@ -1,7 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Валя
- * Date: 24.02.2019
- * Time: 20:31
- */
+
+$number = 0;
+while ($number <= 100) {
+    if ($number%3 !== 0) {
+        $number++;
+        continue;
+    }
+    echo $number . "<br>";
+    $number++;
+}
