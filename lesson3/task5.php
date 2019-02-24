@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Валя
- * Date: 24.02.2019
- * Time: 23:38
- */
+
+function withSpaces($string) {
+    return str_replace(" ", "_", $string);
+}
+
+echo withSpaces("Строка с пробелами");
