@@ -1,14 +1,18 @@
 <?php
 
-//$val – заданное число, $pow – степень.
 function power($val, $pow) {
-//    var_dump($val, $pow);
-    if ($pow === 0) {
-        return 1;
+
+    if ($pow === 1) {
+        return $val;
     }
-    return $val * power($val, --$pow);
+
+    if ($pow <= 0) {
+        return power(1/$val, -$pow);
+    }
+
+    return $val * power($val, $pow-1);
 }
 
 $val = 2;
-$pow = 4;
+$pow = -4;
 echo("число $val в степени $pow - это " . power($val, $pow) . '.');
