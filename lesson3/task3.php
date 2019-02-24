@@ -1,7 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Валя
- * Date: 24.02.2019
- * Time: 20:59
- */
+
+$regions = [
+    "Московская область" => ["Москва", "Зеленоград", "Клин"],
+    "Ленинградская  область" => ["Санкт-Петербур", "Всеволожск", "Павловск", "Кронштадт"],
+    "Рязанская  область" => ["Рязань", "Рыбное", "Касимов"],
+];
+
+foreach ($regions as $region => $towns) {
+    echo "$region:<br>";
+    $towns_separated = implode(", ", $towns);
+    echo "$towns_separated<br>";
+}
