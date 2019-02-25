@@ -1,7 +1,4 @@
 <?php
 
-$file = fopen('file.txt', 'r');
-if (!$file) {
-    echo("Ошибка чтения файла");
-    die;
-}
+echo( file_get_contents('file.txt'));
+echo( file_put_contents('file.txt', "Some Data", FILE_APPEND));
