@@ -72,14 +72,30 @@ $menu = [
 // рекурсивная функция вывода меню
 function printMenu($arr)
 {
+    echo "<ul>";
     foreach ($arr as $item) {
-        echo "<ul>\n";
-        echo "<li><a href='".$item["link"]."'>".$item["title"]."</a></li>\n";
-        if (key_exists("children", $item)) {
+        echo "<li>";
+        echo "<a href=\"".$item["link"]."\">";
+        echo $item["title"];
+        echo "</a>";
+        echo "</li>";
+
+        // Вариант 1: Определяет, была ли установлена переменная значением, отличным от NULL
+//        if (isset($menuItem['children'])) {
+//            printMenu($item["children"]);
+//        }
+
+        // Вариант 2: Проверяет, присутствует ли в массиве указанный ключ или индекс
+//        if (key_exists("children", $item)) {
+//            printMenu($item["children"]);
+//        }
+
+        // Вариант 3: Проверяет, пуста ли переменная
+        if (!empty($item["children"])) {
             printMenu($item["children"]);
         }
-        echo "</ul>\n";
     }
+    echo "</ul>";
 }
 
 //Вывод меню на экран рекурсивно
