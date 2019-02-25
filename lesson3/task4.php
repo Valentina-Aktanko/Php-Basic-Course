@@ -36,7 +36,7 @@ function toTranslate($string) {
         "э" => "e",
         "ю" => "yu",
         "я" => "ya",
-        "" => ""
+        " " => " ",
     ];
 
     $newString = "";
