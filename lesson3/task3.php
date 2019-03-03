@@ -8,6 +8,5 @@ $regions = [
 
 foreach ($regions as $region => $towns) {
     echo "$region:<br>";
-    $towns_separated = implode(", ", $towns);
-    echo "$towns_separated<br>";
+    echo implode(', ', $towns) . '<br>';
 }
