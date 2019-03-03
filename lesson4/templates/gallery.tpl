@@ -10,14 +10,14 @@
 <body>
 <h1>{{H1}}</h1>
 <div class="gallery-wrap">
-    <a href="#" target="_blank"><img src="{{IMG1}}" alt="product image" width="300"></a>
-    <a href="#" target="_blank"><img src="{{IMG2}}" alt="product image" width="300"></a>
-    <a href="#" target="_blank"><img src="{{IMG3}}" alt="product image" width="300"></a>
-    <a href="#" target="_blank"><img src="{{IMG4}}" alt="product image" width="300"></a>
-    <a href="#" target="_blank"><img src="{{IMG5}}" alt="product image" width="300"></a>
-    <a href="#" target="_blank"><img src="{{IMG6}}" alt="product image" width="300"></a>
-    <a href="#" target="_blank"><img src="{{IMG7}}" alt="product image" width="300"></a>
-    <a href="#" target="_blank"><img src="{{IMG8}}" alt="product image" width="300"></a>
+    <a href="{{SRC1}}" target="_blank"><img src="{{SRC1}}" alt="product image" width="300"></a>
+    <a href="{{SRC2}}" target="_blank"><img src="{{SRC2}}" alt="product image" width="300"></a>
+    <a href="{{SRC3}}" target="_blank"><img src="{{SRC3}}" alt="product image" width="300"></a>
+    <a href="{{SRC4}}" target="_blank"><img src="{{SRC4}}" alt="product image" width="300"></a>
+    <a href="{{SRC5}}" target="_blank"><img src="{{SRC5}}" alt="product image" width="300"></a>
+    <a href="{{SRC6}}" target="_blank"><img src="{{SRC6}}" alt="product image" width="300"></a>
+    <a href="{{SRC7}}" target="_blank"><img src="{{SRC7}}" alt="product image" width="300"></a>
+    <a href="{{SRC8}}" target="_blank"><img src="{{SRC8}}" alt="product image" width="300"></a>
 </div>
 </body>
 </html>
