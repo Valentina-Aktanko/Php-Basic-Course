@@ -1,9 +1,2 @@
 <?php
-$num = 0;
-for (;;) {
-    echo ($num);
-    $num ++;
-    if ($num > 9) {
-        break;
-    }
-}
+for ($i = 0; $i < 10; print $i, $i++) {}
