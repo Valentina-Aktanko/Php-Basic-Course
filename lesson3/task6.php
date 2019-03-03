@@ -80,17 +80,6 @@ function printMenu($arr)
         echo "</a>";
         echo "</li>";
 
-        // Вариант 1: Определяет, была ли установлена переменная значением, отличным от NULL
-//        if (isset($menuItem['children'])) {
-//            printMenu($item["children"]);
-//        }
-
-        // Вариант 2: Проверяет, присутствует ли в массиве указанный ключ или индекс
-//        if (key_exists("children", $item)) {
-//            printMenu($item["children"]);
-//        }
-
-        // Вариант 3: Проверяет, пуста ли переменная
         if (!empty($item["children"])) {
             printMenu($item["children"]);
         }
@@ -98,8 +87,6 @@ function printMenu($arr)
     echo "</ul>";
 }
 
-//Вывод меню на экран рекурсивно
 echo '<div>';
-//var_dump($menu);
 printMenu($menu);
 echo '</div>';
