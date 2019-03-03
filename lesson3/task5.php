@@ -1,7 +1,7 @@
 <?php
 
-function withSpaces($string) {
-    return str_replace(" ", "_", $string);
+function replace($str) {
+    return str_replace(" ", "_", $str);
 }
 
-echo withSpaces("Строка с пробелами");
+echo replace("Строка с пробелами");
