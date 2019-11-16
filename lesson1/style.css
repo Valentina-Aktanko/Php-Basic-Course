@@ -1,0 +1,14 @@
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.page-header {
+	min-height: 200px;
+	background-color: #ccc;
+}
+
+.page-footer {
+	min-height: 200px;
+	background-color: #aaa;
+}
